@@ -1,5 +1,16 @@
 {
     "navigationFallback": {
         "rewrite": "/index.html"
+    },
+    "auth": {
+    "identityProviders": {
+      "azureActiveDirectory": {
+        "registration": {
+          "openIdIssuer": "https://login.microsoftonline.com/204dc889-b661-4464-9132-d428acc86775/v2.0",
+          "clientIdSettingName": "AZURE_CLIENT_ID",
+          "clientSecretSettingName": "AZURE_CLIENT_SECRET_APP_SETTING_NAME"
+        }
+      }
     }
+  }
 }
